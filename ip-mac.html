@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sl">
+    <head>
+        <meta charset="UTF-8">
+        <title>IP/MAC naslovi</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="glava">
+            <img id="logo" src="logo.svg" alt="logotip">
+            <h1>KAKO DELUJE INTERNET?</h1>
+        </div>
+        <nav class="meni">
+			<ul>
+				<li><a href="domov.html">Domov</a>
+                    <ul class="podmeni">
+						<li><a href="kviz.html">Kviz</a></li>
+					</ul></li>
+				<li><a href="osnove.html">Osnove interneta</a></li>
+				<li><a href="#">IP/MAC naslov</a></li>
+			    <li><a href="paketki.html">Kako potujejo paketki?</a></li>
+                <li><a href="protokoli.html">Protokoli</a>
+                    <ul class="podmeni">
+						<li><a href="varnost.html">Varnost</a></li>
+					</ul>
+                </li>
+            </ul>
+		</nav>
+        <h2>IP/MAC naslovi</h2>
+        <h3>IP naslovi</h3>
+        <p>
+            IP naslovi so uporabljeni na omrežni plasti TCP/IP modela.
+            Te so:</p>
+            <ul>
+                <li>aplikacijska</li>
+                <li>transportna</li>
+                <li>omrežna</li>
+                <li>povezavna (fizična)</li>
+            </ul>
+            <p>
+            Ta plast ustvarja paketke ter skrbi za iskanje ustrezne poti le the po omrežju. 
+            Pri tem ji pomagajo IP naslovi. Najlažje si IP naslove predstavljamo kot naše stalne naslove. 
+            Če želimo nekomu poslati pismo moramo vedeti njihov naslov. Če želimo računalniku poslati informacije, 
+            potrebujemo njihov javni IP naslov. En stanovanjski blok ima svoj naslov, 
+            nato pa poštar odloži pismo v ta prav nabiralnik. Ta nabiralnik je za paketek privaten IP naslov v omrežju. 
+            Privatnega IP naslova ne vidimo izven omrežja nekega javnega IPja. To se sicer rahlo ne sklada s primerom pošte, 
+            saj na kuverti pisma še vedno vidimo priimek prejemnika.
+            </p>
+            <p>
+            Privatni in javni IP naslovi pa obstajajo samo v IPv4, ker je the naslovov premalo. 
+            Zato obstajajo tudi IPv6 naslovi, ki zaenkrat še niso pretirano v uporabi.
+        </p>
+        <h3>MAC naslovi</h3>
+        <p>
+            MAC naslovi so prisotni na povezavni plasti TCP/IP modela. To je najnižja plast tega modela. 
+            MAC naslov je unikaten vsaki napravi in je fizično zapisan na omrežni kartici računalnika. 
+            Načeloma njegova sprememba ni mogoča. Uporablja se za pošiljanje paketkov znotraj lokalnega omrežja.
+        </p>
+        <hr>
+        <p>(Anželj idr., 2015; Khan in Shiranzaei, 2015)</p>
+    </body>
+</html>

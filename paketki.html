@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kako potujejo paketki?</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="glava">
+            <img id="logo" src="logo.svg" alt="logotip">
+            <h1>KAKO DELUJE INTERNET?</h1>
+        </div>
+        <nav class="meni">
+			<ul>
+				<li><a href="domov.html">Domov</a>
+                    <ul class="podmeni">
+						<li><a href="kviz.html">Kviz</a></li>
+					</ul></li>
+				<li><a href="osnove.html">Osnove interneta</a></li>
+				<li><a href="ip-mac.html">IP/MAC naslov</a></li>
+			    <li><a href="#">Kako potujejo paketki?</a></li>
+                <li><a href="protokoli.html">Protokoli</a>
+                    <ul class="podmeni">
+						<li><a href="varnost.html">Varnost</a></li>
+					</ul>
+                </li>
+            </ul>
+		</nav>
+        <h2>KAKO POTUJEJO PAKETKI?</h2>
+        <p>
+            Denimo, da želimo na neko socialno omrežje nekaj objaviti. Brskalnik iz tega naredi sporočilo po standardu HTTP. 
+            Del sporočila bo glava, ki vsebuje podatke do ciljnega strežnika. HTTP sporočilo, ki vsebuje glavo in podatke preda 
+            protokolu TCP. Po potrebi ta protokol razbije naše sporočilo v segmente. Vsak segment je opremljen s številko vrat, 
+            ki je naslov aplikacije za katero je namenjen. To je poslano v omrežje, kjer jih sprejme strežnik, kateremu smo jih poslali. 
+            Ta strežnik tudi potrdi, da je podatke prejel.
+        </p>
+        <p>
+            Te podatke po internetu pelje IP protokol. S pomočjo IP naslova destinacije, IP protokol po omrežju išče pot do strežnika. 
+            Na povezavni plasti se stvari dogajajo fizično, t. j. enke in ničle, ki jih računalnik prepozna oz. električni signali, 
+            ki za računanik pomenijo 0 in 1.
+        </p>
+        <p>
+            Šele, ko električni signali dosežejo strežnik kateremu smo podatke pošiljali, se sproži serija potrditvenih sporočil 
+            na vseh plasteh, da je strežnik prejel naše sporočilo oz. Da je naša objava lahko potem uspešno vidna na socialnem omrežju.
+        </p>
+        <h3>LAN in WAN</h3>
+        <p>Vse to se lahko dogaja v lokalnih (LAN) ali prostranih omrežjih (WAN).</p>
+        <p>
+            LAN (angl. Local Area Network) je namenjeno povezovanju naprav doma ali v podjetjih. Omejeno je na največ nekaj kilometrov 
+            in lahko vsebuje le dva računalnika ali pa tudi večje število naprav za vse zaposlene.
+        </p>
+        <p>
+            WAN (angl. Wide Area Network) povezuje lokalna omrežja prek več razdalj. V njih najdemo navadno usmerjevalnike in druge podobne naprave.
+        </p>
+        <hr>
+        <p>(Anželj idr., 2015)</p>
+    </body>
+</html>

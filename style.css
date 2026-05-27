@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Roboto;
+  src: url(roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "CF Second Son School";
+  src: url(cf_second_son_school/CFSecondSonPERSONAL-Regular.ttf);
+}
+
+body {
+    background-color: #fef6c9;
+}
+
+h1, h2, h3 {
+    color: #474056;
+    font-family: "CF Second Son School";
+}
+
+h1 {
+    font-size: 40px;
+    vertical-align: middle;
+    display: inline;
+    padding-left: 30px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    color: #090c08;
+    font-family: Roboto;
+}
+
+li {
+    font-family: Roboto;
+}
+
+a {
+    color: #090c08;
+    text-decoration: none;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+label {
+    font-family: Roboto;
+}
+
+input[type="button"] {
+    background-color: #8da1b9;
+    color: #090c08;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    font-family: Roboto;
+    margin: 5px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    display: inline;
+    vertical-align: middle;
+}
+
+#pravilnost1, #pravilnost2, #pravilnost3 {
+    padding-top: 10px;
+}
+
+a:hover {
+    color: #474056;
+}
+
+.glava {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.meni {
+	background-color: #8da1b9;
+}
+
+.meni ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.meni > ul > li {
+	display: inline-block;
+	position: relative;
+    list-style: none;
+}
+
+.meni a {
+	display: block;
+	padding: 15px 20px;
+}
+
+.podmeni {
+	display: none;
+	position: absolute;
+	background-color: #8da1b9;
+}
+
+.meni li:hover .podmeni{
+	display: block;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Protokoli</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="glava">
+            <img id="logo" src="logo.svg" alt="logotip">
+            <h1>KAKO DELUJE INTERNET?</h1>
+        </div>
+        <nav class="meni">
+			<ul>
+				<li><a href="domov.html">Domov</a>
+                    <ul class="podmeni">
+						<li><a href="kviz.html">Kviz</a></li>
+					</ul></li>
+				<li><a href="osnove.html">Osnove interneta</a></li>
+				<li><a href="ip-mac.html">IP/MAC naslov</a></li>
+			    <li><a href="paketki.html">Kako potujejo paketki?</a></li>
+                <li><a href="#">Protokoli</a>
+                    <ul class="podmeni">
+						<li><a href="varnost.html">Varnost</a></li>
+					</ul>
+                </li>
+            </ul>
+		</nav>
+        <h2>PROTOKOLI</h2>
+        <p>
+            TCP/IP je model, zgrajen iz protokolov IP (angl. Internet Protocol) in TCP (angl.  Transmission Control Protocol). 
+            IP je namenjen prenosu podatkov med napravami v omrežju, medtem ko TCP prenaša podatke v aplikacije na napravah. 
+            (Khan in Shiranzaei, 2015)
+        </p>
+        <p>Zgrajen je iz štirih slojev, ki vsebujejo svoje protokole.</p>
+        <table>
+            <tr>
+                <th>Aplikacijska plast</th>
+                <td>HTTP, Telnet, FTP, SMTP, DHCP, RDP,...</td>
+            </tr>
+            <tr>
+                <th>Transportna plast</th>
+                <td>TCP in UDP</td>
+            </tr>
+            <tr>
+                <th>Omrežna plast</th>
+                <td>IP, ARP, ICMP</td>
+            </tr>
+            <tr>
+                <th>Povezovalna plast</th>
+                <td>ARP</td>
+            </tr>
+        </table>
+        <p>(Anželj idr., 2015; Omejec, 2015)</p>
+        <p>Pojasnimo še malo, za kaj se kateri protokoli uporabljajo.</p>
+        <ul>
+            <li>DHCP – naprave v omrežju seznani z nastavitvami ter jim dodeljuje IP naslove.</li>
+            <li>ARP – protokol, ki skrbi za pretvorbo IP naslovov v MAC naslove.</li>
+            <li>HTTP – skrbi za prenos spletnih strani skozi omrežje.</li>
+            <li>HTTPS – zavarovana različica HTTP.</li>
+            <li>ICMP ( angl. Internet Control Message Protocol) – z njim nadziramo IP protokol. Obvešča nas o napakah v omrežju.</li>
+            <li>SMTP (angl. Simple Mail Transfer Protocol) – protokol za prenos elektronske pošte.</li>
+            <li>FTP (angl. File Transfer Protocol) – protokol za prenos datotek.</li>
+        </ul>
+        <p>(Omejec, 2015; Gaber, 2017)</p>
+        <p>Opazimo, da sta na transportni plasti le protokola TCP in UDP. V tabeli spodaj lahko vidimo razlike med njima.</p>
+        <table>
+            <tr>
+                <th>TCP</th>
+                <th>UDP</th>
+            </tr>
+            <tr>
+                <td>Poskrbi, da če se paketki izgubijo, pošlje nove.</td>
+                <td>Ne spremlja izgubljenih paketkov.</td>
+            </tr>
+            <tr>
+                <td>Paketki imajo določen vrstni red.</td>
+                <td>Vseeno je v katerem vrstnem redu pridejo paketki.</td>
+            </tr>
+            <tr>
+                <td>Počasnejši.</td>
+                <td>Hitrejši.</td>
+            </tr>
+            <tr>
+                <td>Zahteva več računalniške moči.</td>
+                <td>Zahteva manj računalniške moči.</td>
+            </tr>
+            <tr>
+                <td>HTTP, HTTPS, FTP, nekatere igrice</td>
+                <td>DNS, telefonija, videoklici, DHCP</td>
+            </tr>
+        </table>
+        <p>(AL-Dhief idr., 2018)</p>
+    </body>
+</html>

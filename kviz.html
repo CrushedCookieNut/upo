@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kviz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="glava">
+            <img id="logo" src="logo.svg" alt="logotip">
+            <h1>KAKO DELUJE INTERNET?</h1>
+        </div>
+        <nav class="meni">
+			<ul>
+				<li><a href="domov.html">Domov</a>
+                    <ul class="podmeni">
+						<li><a href="#">Kviz</a></li>
+					</ul></li>
+				<li><a href="osnove.html">Osnove interneta</a></li>
+				<li><a href="ip-mac.html">IP/MAC naslov</a></li>
+			    <li><a href="paketki.html">Kako potujejo paketki?</a></li>
+                <li><a href="protokoli.html">Protokoli</a>
+                    <ul class="podmeni">
+						<li><a href="#">Varnost</a></li>
+					</ul>
+                </li>
+            </ul>
+		</nav>
+        <h2>KVIZ</h2>
+        <p>Kako se reče, ko pošiljamo paketek eni napravi v omrežju?</p>
+        <form>
+            <input type="radio" id="unicast" name="posiljanje" value="Unicast">
+            <label for="unicast">Unicast</label><br>
+            <input type="radio" id="multicast" name="posiljanje" value="Multicast">
+            <label for="multicast">Multicast</label><br>
+            <input type="radio" id="broadcast" name="posiljanje" value="Broadcast">
+            <label for="broadcast">Broadcast</label><br>
+            <input type="button" value="Submit" onclick="pravilna1()">
+            <div id="pravilnost1"></div>
+        </form>
+        <p>Za katere protokole velja, da so na aplikacijski plasti?</p>
+        <form>
+            <input type="radio" id="1" name="protokol" value="1">
+            <label for="1">HTML, FTP in DHCP</label><br>
+            <input type="radio" id="2" name="protokol" value="2">
+            <label for="2">HTML, FTP in ICMP</label><br>
+            <input type="radio" id="3" name="protokol" value="3">
+            <label for="3"> TCP in UDP</label><br>
+            <input type="button" value="Submit" onclick="pravilna2()">
+            <div id="pravilnost2"></div>
+        </form>
+        <p>Katera vrsta povezave uporablja svetlobo za prenos podatkov?</p>
+        <form>
+            <input type="radio" id="optika" name="svetloba" value="Optika">
+            <label for="optika">Optika</label><br>
+            <input type="radio" id="brezzicna" name="svetloba" value="Brezžicna">
+            <label for="brezzicna">Brezžična</label><br>
+            <input type="radio" id="zicna" name="svetloba" value="Žična">
+            <label for="zicna">Žična</label><br>
+            <input type="button" value="Submit" onclick="pravilna3()">
+            <div id="pravilnost3"></div>
+        </form>
+        <script>
+            function pravilna1() {
+                if (document.getElementById("unicast").checked) {
+                    document.getElementById("pravilnost1").innerHTML = "Pravilno!";
+                } else {
+                    document.getElementById("pravilnost1").innerHTML = "Narobe :(";
+                }
+            }
+            function pravilna2() {
+                if (document.getElementById("1").checked) {
+                    document.getElementById("pravilnost2").innerHTML = "Pravilno!";
+                } else {
+                    document.getElementById("pravilnost2").innerHTML = "Narobe :(";
+                }
+            }
+            function pravilna3() {
+                if (document.getElementById("optika").checked) {
+                    document.getElementById("pravilnost3").innerHTML = "Pravilno!";
+                } else {
+                    document.getElementById("pravilnost3").innerHTML = "Narobe :(";
+                }
+            }
+        </script>
+    </body>
+</html>
